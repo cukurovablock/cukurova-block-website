@@ -9,13 +9,12 @@ const Home: NextPage = () => {
       <Head>
         <title>Çukurova Blockchain </title>
         <meta name="description" content="Çukurova Blockchain official website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
+      <h1 className="text-3xl font-bold text-green-800 text-center mt-52">
+      Çukurova Blockchain Yükleniyor...
     </h1>
-
     </div>
   )
 }
