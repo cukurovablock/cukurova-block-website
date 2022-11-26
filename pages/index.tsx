@@ -1,20 +1,21 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Navbar from './components/Navbar'
+
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="bg-gray-900 w-full h-screen">
       <Head>
-        <title>Çukurova Blockchain </title>
+        <title>Çukurova Blockchain</title>
         <meta name="description" content="Çukurova Blockchain official website" />
         <link rel="icon" href="/logo.png" />
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
+      <Navbar/>
 
-      <h1 className="text-3xl font-bold text-green-800 text-center mt-52">
-      Çukurova Blockchain Yükleniyor...
-    </h1>
+
     </div>
   )
 }
