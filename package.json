@@ -12,6 +12,7 @@
     "@portabletext/react": "^2.0.0",
     "@sanity/cli": "^3.0.6",
     "@sanity/image-url": "^1.0.1",
+    "@sanity/vision": "^3.0.6",
     "framer-motion": "^7.9.0",
     "install-peerdeps": "^3.0.3",
     "next": "^13.0.6",
