@@ -1,12 +1,16 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div id='hakkimizda' className='h-auto px-8 md:px-36 lg:px-64 pt-24 text-white bg-black w-auto ' >
-      <h1 className='text-4xl text-center font-mono font-semibold'>Hakkımızda</h1>
-      <p className='w-auto text-center text-gray-400 text-xl leading-8 pt-10'>
+    <motion.div 
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    id='hakkimizda' className='h-auto md:px-36 lg:px-64 pt-24 text-white bg-black w-auto ' >
+      <h1 className='text-3xl text-center font-mono font-semibold'>Hakkımızda</h1>
+      <p className='w-auto text-center px-5 text-gray-400 text-xl leading-8 pt-10'>
         Çukurova Blockchain Kulübü, teknolojinin, özellikle de blokzincir ve kripto paraların her geçen 
         gün yaygınlaştığı bu dönemde gelişmelere ayak uydurabilmek adına Nisan 2022’de Çukurova 
         Üniversitesi öğrencileri tarafından kurulmuştur.
@@ -50,7 +54,7 @@ const About = (props: Props) => {
             </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
