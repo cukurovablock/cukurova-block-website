@@ -22,12 +22,13 @@ const Landing = (props: Props) => {
           </button>
          </form>
          
-        <motion.div
+        <motion.div className='mt-3'
           animate={{ y: [0, 20, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
           <Image  alt='circle'
-          className='object-contain' src={circle} />
+          className='object-contain mx-auto
+          ' src={circle} />
         </motion.div>
     </div>  
   )

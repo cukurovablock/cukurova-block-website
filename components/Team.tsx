@@ -17,17 +17,16 @@ type TeamProps = {
       className="mt-20 px-10 md:px-54 lg:px-52 max-h-full">
         <h1 className='text-3xl text-center font-mono font-semibold'>Yönetim Ekibi</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-16">
-            { team.map((member) => (
+            {team.map((member) => (
               <div key={member?._id} className="rounded-lg shadow-lg p-4 ">
                   <div className="bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full w-32 h-32 mx-auto ">
-                    <a className=' p-1 rounded-full' >
-                      <Image alt='team'
+                    <a className='block bg-white p-1 rounded-full' >
+                      <img
                        src={urlFor(member?.image).url()}
-                       width={250} height={250}
-                      className="rounded-full object-cover" />
+                      className="rounded-full " />
                     </a>
                   </div>
-                  <div className="text-center mt-4">
+                  <div className="text-center mt-10">
                       <h3 className="text-xl font-semibold">{member?.name}</h3>
                       <p className="text-gray-500">{member?.role}</p>
                       <SocialIcon

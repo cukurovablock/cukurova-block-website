@@ -2,11 +2,11 @@ import { urlFor } from '../sanity';
 import { SanityEvent } from '../typings';
 import {MdChevronLeft, MdChevronRight} from 'react-icons/md';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-
+ 
 type EventProps = {
   events: SanityEvent[]
 }
+
 
 function Events({events}: EventProps) {
 
@@ -33,7 +33,7 @@ function Events({events}: EventProps) {
             <div id='slider' className='w-full h-full overflow-x-hidden scroll 
             whitespace-nowrap scroll-smooth ' >
               {events.map((event) => (
-                  <Image  alt='event'
+                  <img  alt='event'
                   key={event._id}
                   className="inline-block p-2 cursor-pointer object-cover  w-1/2 h-96"
                   src={urlFor(event?.image).url()} />   ))}
