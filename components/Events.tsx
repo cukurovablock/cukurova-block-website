@@ -32,7 +32,7 @@ function Events({events}: EventProps) {
             <div id='slider' className='w-full h-full overflow-x-hidden scroll 
             whitespace-nowrap scroll-smooth ' >
               {events.map((event) => (
-                  <img
+                  <img key={event._id}
                   className="inline-block p-2 cursor-pointer object-cover  w-1/2 h-96"
                   src={urlFor(event?.image).url()} />   ))}
             </div>
