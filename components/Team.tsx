@@ -21,7 +21,8 @@ type TeamProps = {
               <div key={member?._id} className="rounded-lg shadow-lg p-4 ">
                   <div className="bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full w-32 h-32 mx-auto ">
                     <a className=' p-1 rounded-full' >
-                      <Image src={urlFor(member?.image).url()}
+                      <Image alt='team'
+                       src={urlFor(member?.image).url()}
                        width={250} height={250}
                       className="rounded-full object-cover" />
                     </a>

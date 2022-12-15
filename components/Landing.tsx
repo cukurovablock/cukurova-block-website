@@ -26,7 +26,8 @@ const Landing = (props: Props) => {
           animate={{ y: [0, 20, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <Image className='object-contain' src={circle} />
+          <Image  alt='circle'
+          className='object-contain' src={circle} />
         </motion.div>
     </div>  
   )

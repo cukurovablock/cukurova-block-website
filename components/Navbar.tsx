@@ -18,7 +18,8 @@ let Links = [
     <div className='z-50 bg-black right-0 shadow-md fixed md:flex items-center justify-between py-4 md:px-10 px-7 text-white top-0 left-0 '>
         <div className='font-bold text-2xl cursor-pointer flex items-center font-[Helvetica]'>
             <div className="mr-1 pt-2">
-                <Image width={50} height={50} src={logo}  />
+                <Image alt='logo'
+                width={50} height={50} src={logo}  />
             </div>
             <p className='text-xl font-bold'>ÇUKUROVABLOCK</p>
         </div>
