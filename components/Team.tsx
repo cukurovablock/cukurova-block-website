@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { SanityTeam } from '../typings'
 import { urlFor } from '../sanity'
 import { SocialIcon } from 'react-social-icons'
@@ -22,6 +21,7 @@ type TeamProps = {
                   <div className="bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full w-32 h-32 mx-auto ">
                     <a className='block bg-white p-1 rounded-full' >
                       <img
+                      alt='team'
                        src={urlFor(member?.image).url()}
                       className="rounded-full " />
                     </a>
