@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from 'next'
+import type { GetStaticProps } from 'next'
 import Head from 'next/head'
 import About from '../components/About'
 import Landing from '../components/Landing'
@@ -7,7 +7,7 @@ import Events from '../components/Events'
 import Contact from '../components/Contact'
 import Team from '../components/Team'
 import { SanityTeam, SanityEvent } from '../typings'
-import { fetchTeam } from '../utils/fetchTeam'
+import { fetchTeam }  from '../utils/fetchTeam'
 import { fetchEvents } from '../utils/fetchEvents'
 
 type Props = {
